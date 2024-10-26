@@ -2,15 +2,23 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './Footer-Component/Footer'
+import Header from './Header-Component/header'
+import Hero from './HomePage-Component/Hero'
+import Players from './HomePage-Component/Players'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   // const [count, setCount] = useState(0)
-
-  return (
+  return(
     <>
-    <h1 className='text-sky-600'>Hello World</h1>
+      <Header/>
+      <Hero/>
+      <Players/>
+      <Footer/>
     </>
   )
+
 }
 
 export default App
