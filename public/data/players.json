@@ -1,0 +1,243 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/Mcf746F/APTOPIX-Emirates-Asia-Cup-Cricket-83462-jpg-96d12.jpg",
+      "name": "Virat Kohli",
+      "team": "India",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm medium",
+      "price": 1500000
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/nLpDjT8/joe-root-294116910-16x9-jpeg-Version-Id-Lz-Q29x-VI8r7-L-h-Zk-WF47-Kr.jpg",
+      "name": "Joe Root",
+      "team": "England",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm offbreak",
+      "price": 1400000
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/gWvTsRs/Williamson-1200x768.webp",
+      "name": "Kane Williamson",
+      "team": "New Zealand",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm offbreak",
+      "price": 1300000
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/HD9LkkL/steve-smith-pictures-plqsoal1luugiyt3.jpg",
+      "name": "Steve Smith",
+      "team": "Australia",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm leg spin",
+      "price": 1350000
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/YZWfgV7/3684qf3-ben-stokes-afp-625x300-09-March-24.jpg",
+      "name": "Ben Stokes",
+      "team": "England",
+      "role": "All-rounder",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "Right-arm medium",
+      "price": 1600000
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/jHsL38K/20240610036-L.jpg",
+      "name": "Jasprit Bumrah",
+      "team": "India",
+      "role": "Bowler",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast",
+      "price": 1200000
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/0XDtss2/pat-cummins-07-03-2022.jpg",
+      "name": "Pat Cummins",
+      "team": "Australia",
+      "role": "Bowler",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast",
+      "price": 1250000
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/RgvKDwg/Rashid-Khan-Misses-Third-ODI-Against-South-Africa-jpg.webp",
+      "name": "Rashid Khan",
+      "team": "Afghanistan",
+      "role": "Bowler",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm leg spin",
+      "price": 1100000
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co.com/MRwsBL1/Shakib-Al-Hasan-3.jpg",
+      "name": "Shakib Al Hasan",
+      "team": "Bangladesh",
+      "role": "All-rounder",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "Left-arm orthodox",
+      "price": 1400000
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co.com/3sv3cCD/photo.jpg",
+      "name": "Babar Azam",
+      "team": "Pakistan",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm offbreak",
+      "price": 1450000
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co.com/zGVCJkk/e303b9ed6dc7a0a8f45d9555e5b0498d1726979268735936-original.jpg",
+      "name": "David Warner",
+      "team": "Australia",
+      "role": "Batsman",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "Right-arm leg break",
+      "price": 1250000
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co.com/gZpLLCS/n3a086co-andre-russell-afp-625x300-24-June-24.jpg",
+      "name": "Andre Russell",
+      "team": "West Indies",
+      "role": "All-rounder",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast",
+      "price": 1150000
+    },
+    {
+      "id": 13,
+      "image": "https://i.ibb.co.com/VwbDjZQ/Getty-Images-2007291393.jpg",
+      "name": "Rohit Sharma",
+      "team": "India",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm offbreak",
+      "price": 1300000
+    },
+    {
+      "id": 14,
+      "image": "https://i.ibb.co.com/stXTFMt/c56a7745e4d1ad6d8813f463ecff0794-L.jpg",
+      "name": "Quinton de Kock",
+      "team": "South Africa",
+      "role": "Wicketkeeper",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "N/A",
+      "price": 1250000
+    },
+    {
+      "id": 15,
+      "image": "https://i.ibb.co.com/kcnrqH6/l347dt08-mitchell-starc-afp-625x300-24-June-24.jpg",
+      "name": "Mitchell Starc",
+      "team": "Australia",
+      "role": "Bowler",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "Left-arm fast",
+      "price": 1350000
+    },
+    {
+      "id": 16,
+      "image": "https://i.ibb.co.com/m8BY5rX/Jos-Buttler-1.jpg",
+      "name": "Jos Buttler",
+      "team": "England",
+      "role": "Wicketkeeper",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "N/A",
+      "price": 1300000
+    },
+    {
+      "id": 17,
+      "image": "https://i.ibb.co.com/YT8R80L/87721656.webp",
+      "name": "Mohammad Rizwan",
+      "team": "Pakistan",
+      "role": "Wicketkeeper",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "N/A",
+      "price": 1200000
+    },
+    {
+      "id": 18,
+      "image": "https://i.ibb.co.com/F0FD0NY/dc-Cover-ljg159pki9b7fjv5ghf2u4h826-20191115153817-Medi.jpg",
+      "name": "Lockie Ferguson",
+      "team": "New Zealand",
+      "role": "Bowler",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast",
+      "price": 1100000
+    },
+    {
+      "id": 19,
+      "image": "https://i.ibb.co.com/ygsVKkJ/skysports-kagiso-rabada-south-africa-5865966.jpg",
+      "name": "Kagiso Rabada",
+      "team": "South Africa",
+      "role": "Bowler",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast",
+      "price": 1300000
+    },
+    {
+      "id": 20,
+      "image": "https://i.ibb.co.com/k8ZtNR4/7xm-xyz810253.jpg",
+      "name": "Glenn Maxwell",
+      "team": "Australia",
+      "role": "All-rounder",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm offbreak",
+      "price": 1250000
+    },
+    {
+      "id": 21,
+      "image": "https://i.ibb.co.com/6Ng4cKH/291838-6.jpg",
+      "name": "Faf du Plessis",
+      "team": "South Africa",
+      "role": "Batsman",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm leg break",
+      "price": 1200000
+    },
+    {
+      "id": 22,
+      "image": "https://i.ibb.co.com/pjwry2c/5989k0k-mitchell-marsh-625x300-01-May-24.jpg",
+      "name": "Mitchell Marsh",
+      "team": "Australia",
+      "role": "All-rounder",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm fast-medium",
+      "price": 1100000
+    },
+    {
+      "id": 23,
+      "image": "https://i.ibb.co.com/2FNK5PJ/thequint-2021-04-53cd10f0-ca47-4b23-8de8-6f6847a8f860-pandya.jpg",
+      "name": "Hardik Pandya",
+      "team": "India",
+      "role": "All-rounder",
+      "battingHand": "Right-hand bat",
+      "bowlingHand": "Right-arm medium",
+      "price": 1400000
+    },
+    {
+      "id": 24,
+      "image": "https://i.ibb.co.com/XZgVc9D/Wv-GGY4-Irctzh0a23bn3-T.jpg",
+      "name": "Sam Curran",
+      "team": "England",
+      "role": "All-rounder",
+      "battingHand": "Left-hand bat",
+      "bowlingHand": "Left-arm fast-medium",
+      "price": 1150000
+    }
+  ]
+  

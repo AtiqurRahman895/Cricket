@@ -1,9 +1,10 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import heroImage from '../assets/banner-main.png'
 import heroBgImage from '../assets/bg-shadow.png'
 
-const Hero = () => {
+const Hero = ({changeCoinAmount}) => {
     return (
         <section className="">
             <div className="container wrapper">
@@ -12,7 +13,7 @@ const Hero = () => {
                 <img src={heroImage} alt=" " className="w-[245px]" />
                 <h2 className='text-white'>Assemble Your Ultimate Dream 11 Cricket Team</h2>
                 <h5 className='text-custom-ash'>Beyond Boundaries Beyond Limits</h5>
-                <div className="p-[.35rem] border border-custom-orange rounded-md">
+                <div onClick={()=>changeCoinAmount(2000000,"sum")} className="p-[.35rem] border border-custom-orange rounded-md">
                     <button type='button' className='primaryButton'>Claim Free Credit</button>
                 </div>
                 </div>
@@ -24,8 +25,8 @@ const Hero = () => {
     );
 };
 
-// Hero.propTypes = {
-    
-// };
+Hero.propTypes = {
+    changeCoinAmount: PropTypes.func.isRequired
+};
 
 export default Hero;

@@ -64,18 +64,18 @@
   }
 
   .tabButton{
-    @apply py-[.6rem] px-4 text-black font-bold
+    @apply py-[.6rem] px-4 text-black font-bold hover:shadow-md
   }
   .activeTabButton{
-    @apply bg-custom-orange
+    @apply bg-custom-orange hover:shadow-none
   }
 
   .cardButton{
-    @apply px-3 py-[.35rem] rounded-md duration-500 bg-transparent border text-black
+    @apply px-3 py-[.35rem] rounded-md duration-500 bg-transparent border text-black font-bold hover:shadow-md
 
   }
   .activeCardButton{
-    @apply  bg-custom-orange
+    @apply  bg-custom-orange 
 
   }
 

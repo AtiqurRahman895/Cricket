@@ -1,53 +1,58 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import heroImage from "../assets/banner-main.png";
 import { faFlag, faUser } from "@fortawesome/free-regular-svg-icons";
 
-const Available = () => {
+const Available = ({allPlayers,addSelectedPlayers}) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 h-fit ">
-      <div className="border rounded-md p-3 flex flex-col gap-4 h-fit">
-        <img src={heroImage} alt="" className="rounded-md" />
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-3">
-            <FontAwesomeIcon icon={faUser} />
-            <h6>Viratl Kholi</h6>
-          </div>
+    <div className="columns-[300px] space-y-4 gap-4">
+      {
+        allPlayers.map((eachPlayer)=>(
+          <div key={eachPlayer.id} className="break-inside-avoid border rounded-md p-3 flex flex-col gap-4">
+          <img src={eachPlayer.image} alt="" className="rounded-md bg-custom-half-orange" />
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <FontAwesomeIcon icon={faFlag} />
-              <p>Bangladesh</p>
+              <FontAwesomeIcon icon={faUser} />
+              <h6>{eachPlayer.name}</h6>
             </div>
-            <div className="py-[.35rem] px-3 rounded-md bg-custom-ash">
-              All-Rounder
+  
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <FontAwesomeIcon icon={faFlag} />
+                <p>{eachPlayer.team}</p>
+              </div>
+              <div className="py-[.35rem] px-3 rounded-md bg-custom-ash">
+                <b>{eachPlayer.role}</b>
+              </div>
+            </div>
+          </div>
+          <div className="grid gap-3 pt-3 border-t">
+            <h6 className="">Rating</h6>
+            <div className="flex items-center justify-between">
+              <p className={`${eachPlayer.role!=="Bowler" && "text-black "}`}>{eachPlayer.battingHand}</p>
+              <p className={`${eachPlayer.role=="Bowler" || eachPlayer.role=="All-rounder"?"text-black ":null}`}>{eachPlayer.bowlingHand=="N/A"?"Don't bowl":eachPlayer.bowlingHand}</p>
+            </div>
+  
+            <div className="flex items-center justify-between">
+              <span className="text-black">
+                Price: $<span className="text-custom-orange">{eachPlayer.price}</span>
+              </span>
+              <button onClick={()=>addSelectedPlayers(eachPlayer.id)} type="button" className="cardButton activeCardButton">
+                <p>Choose Player</p>
+              </button>
             </div>
           </div>
         </div>
-        <div className="grid gap-3 pt-3 border-t">
-          <b className="text-black">Rating</b>
-          <div className="flex items-center justify-between">
-            <p>Left-Hand-bat</p>
-            <p className="text-black">Right-arm leg break</p>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <span className="text-black">
-              Price: $<span className="text-custom-orange">1500000</span>
-            </span>
-            <button type="button" className="cardButton activeCardButton">
-              Choose Player
-            </button>
-          </div>
-        </div>
-      </div>
+        ))
+      }
     </div>
+
   );
 };
 
-// Available.propTypes = {
-
-// };
+Available.propTypes = {
+  allPlayers: PropTypes.array.isRequired,
+  addSelectedPlayers: PropTypes.func.isRequired
+};
 
 export default Available;

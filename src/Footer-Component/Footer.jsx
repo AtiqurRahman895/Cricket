@@ -1,17 +1,17 @@
 // import React from 'react';
 // import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
-import heroBgImage from '../assets/bg-shadow.png'
 import footerLogo from "../assets/logo-footer.png";
+import Newsletter from '../HomePage-Component/Newsletter';
 
 const Footer = () => {
-    const [newslatterSectionHeight,setNewslatterSectionHeight]=useState(0)
-    const newslatterSection=useRef(null)
+    const [newsletterSectionHeight,setNewsletterSectionHeight]=useState(0)
+    const newsletterSection=useRef(null)
     useEffect(()=>{
         const updateSectionHeight=()=>{
-            // if(newslatterSection.current){
-            setNewslatterSectionHeight(newslatterSection.current.offsetHeight)
-            // console.log(newslatterSectionHeight)
+            // if(newsletterSection.current){
+            setNewsletterSectionHeight(newsletterSection.current.offsetHeight)
+            // console.log(newsletterSectionHeight)
             // }
         }
         updateSectionHeight()
@@ -20,26 +20,15 @@ const Footer = () => {
 
         })
     },[]) 
-    console.log(newslatterSectionHeight)
+    // console.log(newsletterSectionHeight)
 
 
 
     return (
-        <footer className="bg-black" style={{ paddingTop: `${newslatterSectionHeight/2}px`,marginTop:`${newslatterSectionHeight/2}px` }}>
+        <footer className="bg-black" style={{ paddingTop: `${newsletterSectionHeight/2}px`,marginTop:`${newsletterSectionHeight/2}px` }}>
             <div className="container wrapper grid gap-12 relative">
 
-                <div ref={newslatterSection} className="border border-white rounded-2xl p-4 absolute w-full" style={{ top: `-${newslatterSectionHeight}px`}}>
-                    <div className="rounded-2xl bg-white">
-                        <div className="py-8 md:py-12 px-5 md:px-8 text-center grid gap-2 rounded-2xl" style={{backgroundImage:`url(${heroBgImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-                            <h3 className="">Subscribe to our Newsletter</h3>
-                            <b>Get the latest updates & news right in your inbox!</b>
-                            <form action="" className="flex flex-wrap justify-center item-center gap-2 mt-3">
-                                <input type="email" name="UserEmail" id="UserEmail" placeholder="Enter your email" required />
-                                <button type="submit" className="font-bold bg-custom-gradient py-[.6rem] px-3 rounded-md">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <Newsletter newsletterRef={newsletterSection} newsletterHeight={newsletterSectionHeight}/>
 
                 <img src={footerLogo} alt="" className='w-[100px] mt-6 mx-auto'/>
 
@@ -62,7 +51,7 @@ const Footer = () => {
                     <div className="grid gap-4">
                         <h6 className='text-white'>Subscribe</h6>
                         <p className='w-[250px]'>Subscribe to our newsletter for the latest updates.</p>
-                        <form action="" className="flex justify-center item-center bg-white w-fit md:w-full rounded-md text-black">
+                        <form action="https://formsubmit.co/emonhassan895@gmail.com" method="post" className="flex justify-center item-center bg-white w-fit md:w-full rounded-md text-black">
                                 <input type="email" name="UserEmail" id="UserEmail" placeholder="Enter your email" required className='rounded-e-none' />
                                 <button type="submit" className="font-bold bg-custom-gradient py-[.6rem] px-3 rounded-md rounded-s-none">Subscribe</button>
                             </form>
