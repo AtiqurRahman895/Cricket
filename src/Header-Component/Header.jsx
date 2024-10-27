@@ -21,7 +21,7 @@ const Header = ({ coins }) => {
 },[]) 
   return (
     <header ref={headerRef} className="sticky top-0 w-full z-50">
-      <nav className="container wrapper py-2">
+      <nav className="container wrapper py-1">
         <div className="navbar px-0">
           <div className="navbar-start">
             <div className="dropdown lg:hidden">
@@ -76,7 +76,7 @@ const Header = ({ coins }) => {
             </div>
 
             <a href="">
-              <img src={logo} alt="Cricket" className="w-[40px] md:w-[60px] " />
+              <img src={logo} alt="Cricket" className="w-[60px] " />
             </a>
           </div>
           {/* <a className="navbar-center lg:hidden">

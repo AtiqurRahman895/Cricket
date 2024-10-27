@@ -62,7 +62,7 @@ const Footer = () => {
             </div>
 
             <div className="footerCopyRights container text-custom-ash text-center mt-8 py-6 border-t">
-                <span>All right reserved @Peddy 2024. Developed by <a href="https://atiqur.pages.dev/"><strong>Atiqur Rahman</strong></a></span>
+                <span>All right reserved @Cricket 2024. Developed by <a href="https://atiqur.pages.dev/"><strong>Atiqur Rahman</strong></a></span>
             </div>
             
         </footer>
