@@ -19,7 +19,7 @@ function App() {
       setCoins(coins - amount)
     }else{
       setCoins(coins + amount)
-      toast.success(`${amount} coins are added`)
+      toast.success(`${amount} coins have been added`)
     }
     
   }

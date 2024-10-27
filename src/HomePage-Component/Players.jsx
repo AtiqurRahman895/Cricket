@@ -21,7 +21,7 @@ const Players = ({allPlayers,coins,changeCoinAmount})=> {
 
 
     if(selectedPlayer.price<=coins){
-      if(selectedPlayers.length<6){
+      if(selectedPlayers.length<11){
         if(selectedPlayers.some(player=>player.id == playersId)){
           toast.warning(`You've already selected ${selectedPlayer.name} once.`);
         }else{
@@ -30,7 +30,7 @@ const Players = ({allPlayers,coins,changeCoinAmount})=> {
           changeCoinAmount(selectedPlayer.price,"sub")
         }
       }else{
-        toast.error("You can only select up to 6 players. If you wish to choose new ones, please delete a player from your current selection.")
+        toast.error("You can only select up to 11 players. If you wish to choose new ones, please delete a player from your current selection.")
       }
     }else{
       toast.error("You currently lack the necessary coins to claim this player. Please obtain free coins first.")
@@ -62,14 +62,14 @@ const Players = ({allPlayers,coins,changeCoinAmount})=> {
         <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-8">
         {/* ${allPlayers.length?"Available Players":"Loading..."} */}
           {showAvailable?<h4 className="">Available Players</h4>:
-          <h4 className="">Selected Players (({selectedPlayers.length}/6))</h4>}
+          <h4 className="">Selected Players (({selectedPlayers.length}/11))</h4>}
           
           <div className="flex items-center border rounded-md">
             <button onClick={()=>toggleAvailable(true)} type="button" className={`tabButton rounded-s-md ${showAvailable && "activeTabButton"}`}>
               Available
             </button>
             <button onClick={()=>toggleAvailable(false)} type="button" className={`tabButton rounded-e-md ${!showAvailable && "activeTabButton"}`}>
-              Selected ({selectedPlayers.length}/6)
+              Selected ({selectedPlayers.length}/11)
             </button>
           </div>
         </div>

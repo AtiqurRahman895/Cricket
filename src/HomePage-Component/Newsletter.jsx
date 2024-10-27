@@ -5,7 +5,7 @@ import heroBgImage from '../assets/bg-shadow.png'
 
 const Newsletter = ({newsletterHeight,newsletterRef}) => {
     return (
-    <div ref={newsletterRef} className="border border-white rounded-2xl p-4 absolute w-full" style={{ top: `-${newsletterHeight}px`}}>
+    <div ref={newsletterRef} className="border border-white rounded-2xl p-3 absolute w-full" style={{ top: `-${newsletterHeight}px`}}>
         <div className="rounded-2xl bg-white">
             <div className="py-8 md:py-12 px-5 md:px-8 text-center grid gap-2 rounded-2xl" style={{backgroundImage:`url(${heroBgImage})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <h3 className="">Subscribe to our Newsletter</h3>

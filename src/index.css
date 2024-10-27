@@ -71,7 +71,7 @@
   }
 
   .cardButton{
-    @apply px-3 py-[.35rem] rounded-md duration-500 bg-transparent border text-black font-bold hover:shadow-md
+    @apply px-3 py-2 rounded-md duration-500 font-bold hover:shadow-md border border-custom-orange bg-custom-half-orange hover:bg-custom-orange text-custom-orange hover:text-black
 
   }
   .activeCardButton{

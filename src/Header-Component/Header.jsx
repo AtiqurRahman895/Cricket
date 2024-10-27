@@ -111,8 +111,8 @@ const Header = ({ coins }) => {
               </ul>
             </div>
 
-            <div className="cardButton flex-none flex items-center gap-2">
-              <b>{coins} Coin</b> <img src={coinImg} alt=" " />
+            <div className="flex-none flex items-center gap-2">
+              <b>{coins}</b> <img src={coinImg} alt=" " />
             </div>
           </div>
         </div>

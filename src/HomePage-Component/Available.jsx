@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFlag, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faFlag, faUser} from "@fortawesome/free-regular-svg-icons";
+import { faCircleDollarToSlot } from "@fortawesome/free-solid-svg-icons";
 
 const Available = ({allPlayers,addSelectedPlayers}) => {
   return (
@@ -12,16 +13,16 @@ const Available = ({allPlayers,addSelectedPlayers}) => {
 
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon icon={faUser} className="text-custom-orange"/>
               <h6>{eachPlayer.name}</h6>
             </div>
   
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <FontAwesomeIcon icon={faFlag} />
+                <FontAwesomeIcon icon={faFlag} className="text-custom-orange"/>
                 <p>{eachPlayer.team}</p>
               </div>
-              <div className="py-[.35rem] px-3 rounded-md bg-custom-ash">
+              <div className="">
                 <b>{eachPlayer.role}</b>
               </div>
             </div>
@@ -30,14 +31,18 @@ const Available = ({allPlayers,addSelectedPlayers}) => {
             <h6 className="">Rating</h6>
             <div className="flex items-center justify-between">
               <p className={`${eachPlayer.role!=="Bowler" && "text-black "}`}>{eachPlayer.battingHand}</p>
-              <p className={`${eachPlayer.role=="Bowler" || eachPlayer.role=="All-rounder"?"text-black ":null}`}>{eachPlayer.bowlingHand=="N/A"?"Don't bowl":eachPlayer.bowlingHand}</p>
+              <p className={`${eachPlayer.role=="Bowler" || eachPlayer.role=="All-rounder"?"text-black ":null}`}>{eachPlayer.bowlingHand=="N/A"?"Doesn't bowl":eachPlayer.bowlingHand}</p>
             </div>
   
             <div className="flex items-center justify-between">
-              <span className="text-black">
-                Price: $<span className="text-custom-orange">{eachPlayer.price}</span>
-              </span>
-              <button onClick={()=>addSelectedPlayers(eachPlayer.id)} type="button" className="cardButton activeCardButton">
+            <div className="flex items-center gap-3">
+              <FontAwesomeIcon icon={faCircleDollarToSlot} className="text-custom-orange"/>
+              <b className="text-black">{eachPlayer.price}</b>
+            </div>
+              {/* <span className="text-black">
+                Price: $<span className="text-custom-orange"></span>
+              </span> */}
+              <button onClick={()=>addSelectedPlayers(eachPlayer.id)} type="button" className="cardButton">
                 <p>Choose Player</p>
               </button>
             </div>
